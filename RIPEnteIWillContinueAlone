@@ -46,7 +46,7 @@ local myData = loadstring(game:HttpGet("https://raw.githubusercontent.com/z4gs/s
 
 local array = {
 	boss = {
-		["Gyakusatsu"] = 1250,
+		["Gyakusatsu (Not in VIP)"] = 1250,
 		["Eto Yoshimura"] = 1250,
 		["Koutarou Amon"] = 750,
 		["Nishiki Nishio"] = 250,
