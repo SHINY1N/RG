@@ -1,3 +1,5 @@
+print("And Hello from Shiny c:")
+
 local gui = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/z4gs/scripts/master/testtttt.lua"))():AddWindow("Ro-Ghoul - By SHINY N", {
 	main_color = Color3.fromRGB(0,0,0),
 	min_size = Vector2.new(373, 340),
@@ -82,7 +84,8 @@ btn = tab1:AddButton("Start", function()
 				wait(1)
 			end
 		else
-			player:Kick("Failed to get the Remote key, please try to execute the script again")
+			print("Not Working? screenshot and send to Shiny!")
+			--player:Kick("Failed to get the Remote key, please try to execute the script again")
 		end
 	else
 		btn.Text, array.autofarm, array.died = "Start", false, false
