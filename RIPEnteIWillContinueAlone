@@ -394,7 +394,7 @@ player.PlayerFolder.Stats.Yen.Changed:Connect(function(value)
 	end
 end)
 
---getconnections(player.Idled)[1]:Disable()
+-- getconnections(player.Idled)[1]:Disable()
 
 get.Players.PlayerAdded:Connect(function(plr)
 	if array.kick then
