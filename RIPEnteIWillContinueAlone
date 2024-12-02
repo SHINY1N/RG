@@ -1,5 +1,4 @@
-print("And Hello from Shiny c:")
-
+print("Hi from Shiny!")
 local gui = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/z4gs/scripts/master/testtttt.lua"))():AddWindow("Ro-Ghoul - By SHINY N", {
 	main_color = Color3.fromRGB(0,0,0),
 	min_size = Vector2.new(373, 340),
@@ -30,6 +29,7 @@ local myData = loadstring(game:HttpGet("https://raw.githubusercontent.com/z4gs/s
 		R = false
 	},
 	Boss = {
+		["Gyakusatsu"] = false,
 		["Eto Yoshimura"] = false,
 		["Koutarou Amon"] = false,
 		["Nishiki Nishio"] = false,
@@ -47,6 +47,7 @@ local myData = loadstring(game:HttpGet("https://raw.githubusercontent.com/z4gs/s
 
 local array = {
 	boss = {
+		["Gyakusatsu (Not in VIP)"] = 1250,
 		["Eto Yoshimura"] = 1250,
 		["Koutarou Amon"] = 750,
 		["Nishiki Nishio"] = 250,
@@ -82,8 +83,7 @@ btn = tab1:AddButton("Start", function()
 				wait(1)
 			end
 		else
-			print("Not Working? screenshot and send to Shiny!")
-			--player:Kick("Failed to get the Remote key, please try to execute the script again")
+			player:Kick("Failed to get the Remote key, please try to execute the script again")
 		end
 	else
 		btn.Text, array.autofarm, array.died = "Start", false, false
@@ -394,7 +394,7 @@ player.PlayerFolder.Stats.Yen.Changed:Connect(function(value)
 	end
 end)
 
--- getconnections(player.Idled)[1]:Disable()
+getconnections(player.Idled)[1]:Disable()
 
 get.Players.PlayerAdded:Connect(function(plr)
 	if array.kick then
